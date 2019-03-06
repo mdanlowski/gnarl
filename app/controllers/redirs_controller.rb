@@ -35,7 +35,7 @@ class RedirsController < ApplicationController
         end
               
       else
-        flash[:alert] = redir.errors.full_messages
+        flash[:alert] = @redir.errors.full_messages
         redirect_to root_path
       end
       

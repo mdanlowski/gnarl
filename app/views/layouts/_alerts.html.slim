@@ -1,7 +1,14 @@
 - if alert
   div.alert
-	  = alert.length > 1 ? alert : 'Link was empty or format was invalid. Check it and try again.'
+    - if alert.class == Array
+      - alert.each do |e|
+          div = e
 
+    - elsif alert.class == String
+      = alert
+
+    - else
+      'Link was empty or format was invalid. Check it and try again.'
 - elsif notice 
   div.notice
     = notice

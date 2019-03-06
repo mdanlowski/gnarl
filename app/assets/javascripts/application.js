@@ -17,8 +17,17 @@
 //= require_tree .
 
 function autoPaste(obj){
-    navigator.clipboard.readText().then(text => obj.value = text);
+  try {
+      navigator.clipboard.readText().then(function(text){
+      obj.value = text;
+    });
+  }
+  // no access to clipboard - just continue
+  catch( Error ) {
+    return;
+  }
 }
+
 
 $( function(){
   // trim some whitespace
