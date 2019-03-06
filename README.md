@@ -10,7 +10,7 @@ http://gnurl.herokuapp.com/
 - The App tries to open the page in the background and checks if the address returns anything, if not, or if it's a 400 - the link will not be accepted **This works only locally due to Heroku internal limitations**
 
 ### TURNING ON/OFF THE FEATURE LOCALLY:
-#### Uncomment/Comment these lines
+#### Uncomment/Comment these lines in `app/models/redir.rb`
 ``` ruby
 15|      # see if the link makes sense
 16|        content = self.inspect_link(input)
