@@ -1,3 +1,8 @@
+```
+Rails 5.2
+ruby 2.5.1
+```
+
 # GNARL
 ### Ruby on Rails URL shortener/forwarder
 
