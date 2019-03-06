@@ -1,0 +1,14 @@
+$(function() {
+	//alert("<%= j root_url.to_s + Redir.last.hashed.to_s %>");
+  $(".alert").remove;
+  $(".notice").remove;
+
+  var source = "<%= j @redir.source %>";
+  var result = "<%= j root_url.to_s + @redir.hashed.to_s %>";
+
+  $(".result-bar").html($(".result-bar").html()+"<div>Shortcut created! From: <em>" + source + "</em> - <a href=" + result + ">" + result + "</a></div>");
+  $(".result-bar").addClass("visible");
+  
+});
+
+// wp.pl
