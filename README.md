@@ -1,7 +1,7 @@
 # GNARL
 ### Ruby on Rails URL shortener/forwarder
 
-https://git.heroku.com/gnurl.git
+http://gnurl.herokuapp.com/
 
 ### Features:
 - Any valid link is digested into a form of `hostname + 8 character hash`
